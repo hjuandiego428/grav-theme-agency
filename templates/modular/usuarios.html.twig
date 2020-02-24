@@ -1,4 +1,4 @@
-<section id="services">
+<section id="usuarios">
   <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
@@ -6,19 +6,19 @@
         </div>
     </div>
     <div class="row text-center">
-        {% for service in page.header.services %}
+        {% for usuarios in page.header.usuarios %}
             <div class="col-md-4">
-                {% if service.icon %}
+                {% if usuarios.icon %}
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-{{ service.icon }} fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-{{ usuarios.icon }} fa-stack-1x fa-inverse"></i>
                     </span>
                 {% endif %}
-                {% if service.header %}
-                    <h4 class="service-heading">{{ service.header }}</h4>
+                {% if usuarios.header %}
+                    <h4 class="usuarios-heading">{{ usuarios.header }}</h4>
                 {% endif %}
-                {% if service.text %}
-                    <p class="text-muted">{{ service.text }}</p>
+                {% if usuarios.text %}
+                    <p class="text-muted">{{ usuarios.text }}</p>
                 {% endif %}
             </div>
         {% endfor %}
